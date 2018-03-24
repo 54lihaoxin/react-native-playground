@@ -11,15 +11,19 @@
 		46F23EAE20670F77006D6FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAC20670F77006D6FAC /* Main.storyboard */; };
 		46F23EB020670F77006D6FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAF20670F77006D6FAC /* Assets.xcassets */; };
 		46F23EB320670F77006D6FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */; };
+		DCCAD1B2BEEBB9E8CF550F0C /* Pods_ReactNativePlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E839CC1065336AF64E12FF9 /* Pods_ReactNativePlayground.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E839CC1065336AF64E12FF9 /* Pods_ReactNativePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F23EA520670F77006D6FAC /* ReactNativePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F23EA820670F77006D6FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F23EAD20670F77006D6FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46F23EAF20670F77006D6FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46F23EB220670F77006D6FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F23EB420670F77006D6FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566B2DC747474C5F09232AA0 /* Pods-ReactNativePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground.release.xcconfig"; sourceTree = "<group>"; };
+		E6A24A26A072558E6401CC56 /* Pods-ReactNativePlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCCAD1B2BEEBB9E8CF550F0C /* Pods_ReactNativePlayground.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +43,8 @@
 			children = (
 				46F23EA720670F77006D6FAC /* ReactNativePlayground */,
 				46F23EA620670F77006D6FAC /* Products */,
+				74AFD81DC3E5FCE8CE471459 /* Pods */,
+				A5B6CE46B002B1C26CE29714 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,23 @@
 			path = ReactNativePlayground;
 			sourceTree = "<group>";
 		};
+		74AFD81DC3E5FCE8CE471459 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6A24A26A072558E6401CC56 /* Pods-ReactNativePlayground.debug.xcconfig */,
+				566B2DC747474C5F09232AA0 /* Pods-ReactNativePlayground.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A5B6CE46B002B1C26CE29714 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E839CC1065336AF64E12FF9 /* Pods_ReactNativePlayground.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46F23EB720670F77006D6FAC /* Build configuration list for PBXNativeTarget "ReactNativePlayground" */;
 			buildPhases = (
+				C8E78AE848C8126C973B784B /* [CP] Check Pods Manifest.lock */,
 				46F23EA120670F77006D6FAC /* Sources */,
 				46F23EA220670F77006D6FAC /* Frameworks */,
 				46F23EA320670F77006D6FAC /* Resources */,
+				0F1E31A0AD069A793B4993BE /* [CP] Embed Pods Frameworks */,
+				890FA3FD2F59E472CE42351F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1E31A0AD069A793B4993BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		890FA3FD2F59E472CE42351F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8E78AE848C8126C973B784B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactNativePlayground-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46F23EA120670F77006D6FAC /* Sources */ = {
@@ -268,6 +357,7 @@
 		};
 		46F23EB820670F77006D6FAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6A24A26A072558E6401CC56 /* Pods-ReactNativePlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -283,6 +373,7 @@
 		};
 		46F23EB920670F77006D6FAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566B2DC747474C5F09232AA0 /* Pods-ReactNativePlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
