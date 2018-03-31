@@ -10,17 +10,30 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--1st VC-->
+        <!--RNHighScoreView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RNHighScoreViewController" customModule="ReactNativePlayground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXO-34-Hb7">
+                                <rect key="frame" x="145" y="318.5" width="84" height="30"/>
+                                <state key="normal" title="High Scores"/>
+                                <connections>
+                                    <action selector="showHighScore:" destination="BYZ-38-t0r" eventType="touchUpInside" id="elt-2T-1Ev"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hXO-34-Hb7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fQO-6M-wtl"/>
+                            <constraint firstItem="hXO-34-Hb7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y2S-aB-q8w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="1st VC" id="Jcr-ht-b0r">
+                    <navigationItem key="navigationItem" title="RNHighScoreView" id="Jcr-ht-b0r">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="TOx-Jy-NUf">
                             <connections>
                                 <segue destination="8ag-Ic-XPC" kind="show" id="UJ1-37-0yt"/>

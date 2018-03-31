@@ -11,6 +11,7 @@
 		46F23EAE20670F77006D6FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAC20670F77006D6FAC /* Main.storyboard */; };
 		46F23EB020670F77006D6FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAF20670F77006D6FAC /* Assets.xcassets */; };
 		46F23EB320670F77006D6FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */; };
+		46F23EC920671C1D006D6FAC /* RNHighScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */; };
 		DCCAD1B2BEEBB9E8CF550F0C /* Pods_ReactNativePlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E839CC1065336AF64E12FF9 /* Pods_ReactNativePlayground.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +23,7 @@
 		46F23EAF20670F77006D6FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46F23EB220670F77006D6FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46F23EB420670F77006D6FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHighScoreViewController.swift; sourceTree = "<group>"; };
 		566B2DC747474C5F09232AA0 /* Pods-ReactNativePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground.release.xcconfig"; sourceTree = "<group>"; };
 		E6A24A26A072558E6401CC56 /* Pods-ReactNativePlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativePlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactNativePlayground/Pods-ReactNativePlayground.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				46F23EA820670F77006D6FAC /* AppDelegate.swift */,
+				46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */,
 				46F23EAC20670F77006D6FAC /* Main.storyboard */,
 				46F23EAF20670F77006D6FAC /* Assets.xcassets */,
 				46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F23EA920670F77006D6FAC /* AppDelegate.swift in Sources */,
+				46F23EC920671C1D006D6FAC /* RNHighScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
