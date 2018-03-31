@@ -44,6 +44,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		468D25E720701D6B005EF265 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */,
+				46F23EAC20670F77006D6FAC /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		468D25E920701D99005EF265 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				468D25E120700E92005EF265 /* RCTRootedViewController.swift */,
+				46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		46F23E9C20670F77006D6FAC = {
 			isa = PBXGroup;
 			children = (
@@ -65,12 +83,10 @@
 		46F23EA720670F77006D6FAC /* ReactNativePlayground */ = {
 			isa = PBXGroup;
 			children = (
-				46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */,
-				46F23EAC20670F77006D6FAC /* Main.storyboard */,
+				468D25E720701D6B005EF265 /* Storyboards */,
+				468D25E920701D99005EF265 /* ViewControllers */,
 				46F23EA820670F77006D6FAC /* AppDelegate.swift */,
 				468D25E3207010D8005EF265 /* JavaScriptCodeLocation.swift */,
-				468D25E120700E92005EF265 /* RCTRootedViewController.swift */,
-				46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */,
 				46F23EAF20670F77006D6FAC /* Assets.xcassets */,
 				46F23EB420670F77006D6FAC /* Info.plist */,
 			);
