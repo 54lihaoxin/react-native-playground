@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		468D25E220700E92005EF265 /* RCTRootedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25E120700E92005EF265 /* RCTRootedViewController.swift */; };
+		468D25E4207010D8005EF265 /* JavaScriptCodeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25E3207010D8005EF265 /* JavaScriptCodeLocation.swift */; };
 		46F23EA920670F77006D6FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23EA820670F77006D6FAC /* AppDelegate.swift */; };
 		46F23EAE20670F77006D6FAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAC20670F77006D6FAC /* Main.storyboard */; };
 		46F23EB020670F77006D6FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAF20670F77006D6FAC /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		0E839CC1065336AF64E12FF9 /* Pods_ReactNativePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D25E120700E92005EF265 /* RCTRootedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTRootedViewController.swift; sourceTree = "<group>"; };
+		468D25E3207010D8005EF265 /* JavaScriptCodeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaScriptCodeLocation.swift; sourceTree = "<group>"; };
 		46F23EA520670F77006D6FAC /* ReactNativePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F23EA820670F77006D6FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F23EAD20670F77006D6FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,11 +65,13 @@
 		46F23EA720670F77006D6FAC /* ReactNativePlayground */ = {
 			isa = PBXGroup;
 			children = (
-				46F23EA820670F77006D6FAC /* AppDelegate.swift */,
-				46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */,
-				46F23EAC20670F77006D6FAC /* Main.storyboard */,
-				46F23EAF20670F77006D6FAC /* Assets.xcassets */,
 				46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */,
+				46F23EAC20670F77006D6FAC /* Main.storyboard */,
+				46F23EA820670F77006D6FAC /* AppDelegate.swift */,
+				468D25E3207010D8005EF265 /* JavaScriptCodeLocation.swift */,
+				468D25E120700E92005EF265 /* RCTRootedViewController.swift */,
+				46F23EC820671C1D006D6FAC /* RNHighScoreViewController.swift */,
+				46F23EAF20670F77006D6FAC /* Assets.xcassets */,
 				46F23EB420670F77006D6FAC /* Info.plist */,
 			);
 			path = ReactNativePlayground;
@@ -227,6 +233,8 @@
 			files = (
 				46F23EA920670F77006D6FAC /* AppDelegate.swift in Sources */,
 				46F23EC920671C1D006D6FAC /* RNHighScoreViewController.swift in Sources */,
+				468D25E4207010D8005EF265 /* JavaScriptCodeLocation.swift in Sources */,
+				468D25E220700E92005EF265 /* RCTRootedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
