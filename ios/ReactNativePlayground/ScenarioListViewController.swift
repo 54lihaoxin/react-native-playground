@@ -8,20 +8,21 @@
 
 import UIKit
 
-final class ScenarioListViewController: UIViewController {
+final class ScenarioListViewController: SceneAwareViewController {
     
     fileprivate let cellReuseId = "Cell"
-    fileprivate let scene: ScenarioListScene
     fileprivate let listView: UITableView
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError()
+    fileprivate var scenarioListScene: ScenarioListScene {
+        guard let scn = scene as? ScenarioListScene else { fatalError() }
+        return scn
     }
     
+    required init?(coder aDecoder: NSCoder) { fatalError() }
+    
     init(with scene: ScenarioListScene) {
-        self.scene = scene
         listView = UITableView(frame: .zero)
         super.init(nibName: scene.nibName, bundle: nil)
+        self.scene = scene
         title = "Scenario List"
         
         let setUpListView = {
@@ -38,7 +39,7 @@ final class ScenarioListViewController: UIViewController {
 extension ScenarioListViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return scene.items.count
+        return scenarioListScene.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -49,11 +50,11 @@ extension ScenarioListViewController: UITableViewDataSource {
 extension ScenarioListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        cell.textLabel?.text = scene.items[indexPath.row].rawValue
+        cell.textLabel?.text = scenarioListScene.items[indexPath.row].rawValue
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        scene.select(item: scene.items[indexPath.row])
+        scenarioListScene.select(item: scenarioListScene.items[indexPath.row])
     }
 }

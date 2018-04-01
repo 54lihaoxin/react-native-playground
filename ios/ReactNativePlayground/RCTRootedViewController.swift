@@ -8,14 +8,13 @@
 
 import React.RCTRootView
 
-class RCTRootedViewController: UIViewController {
+class RCTRootedViewController: SceneAwareViewController {
     
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("This must not be called")
-    }
+    required init?(coder aDecoder: NSCoder) { fatalError() }
 
-    init(with rctRootView: RCTRootView) {
+    init(with rctRootView: RCTRootView, scene: Scene) {
         super.init(nibName: nil, bundle: nil)
+        self.scene = scene
         view = rctRootView
     }
 }
