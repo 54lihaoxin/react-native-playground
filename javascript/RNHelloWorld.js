@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import {
+  AppRegistry,
   Platform,
   StyleSheet,
   Text,
@@ -20,7 +21,7 @@ const instructions = Platform.select({
 });
 
 type Props = {};
-export default class App extends Component<Props> {
+export default class RNHelloWorld extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
@@ -56,3 +57,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
+
+AppRegistry.registerComponent('RNHelloWorld', () => RNHelloWorld);

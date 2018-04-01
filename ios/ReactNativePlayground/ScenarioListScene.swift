@@ -13,6 +13,7 @@ import UIKit
 final class ScenarioListScene: Scene {
     
     enum Item: String {
+        case RNHelloWorld
         case RNHighScores
     }
     
@@ -20,12 +21,13 @@ final class ScenarioListScene: Scene {
         return scenarioListViewController as UIViewController
     }
     
-    let items: [Item] = [.RNHighScores]
+    let items: [Item] = [.RNHelloWorld, .RNHighScores]
     lazy var scenarioListViewController: ScenarioListViewController = { ScenarioListViewController(with: self) }()
     
     func select(item: Item) {
         switch item {
-        case .RNHighScores: navigationPush(scene: RnHighScoresScene(parentScene: self))
+        case .RNHelloWorld: navigationPush(scene: RNHelloWorldScene(parentScene: self))
+        case .RNHighScores: navigationPush(scene: RNHighScoresScene(parentScene: self))
         }
     }
 }

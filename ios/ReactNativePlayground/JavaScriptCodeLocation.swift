@@ -11,6 +11,7 @@ import UIKit
 struct JavaScriptCodeLocation {
     
     enum Module: String {
+        case RNHelloWorld
         case RNHighScores
     }
     

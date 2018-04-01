@@ -14,8 +14,9 @@
 		468D25EF2070219A005EF265 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25EE2070219A005EF265 /* Scene.swift */; };
 		468D25F52070265F005EF265 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25F42070265F005EF265 /* UIView+Extensions.swift */; };
 		468D25FA20702C3C005EF265 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25F920702C3C005EF265 /* UINavigationController+Extensions.swift */; };
-		468D25FD20703A48005EF265 /* RnHighScoresScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25FC20703A48005EF265 /* RnHighScoresScene.swift */; };
+		468D25FD20703A48005EF265 /* RNHighScoresScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25FC20703A48005EF265 /* RNHighScoresScene.swift */; };
 		468D26012070502A005EF265 /* SceneAwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D26002070502A005EF265 /* SceneAwareViewController.swift */; };
+		468D260320706262005EF265 /* RNHelloWorldScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D260220706262005EF265 /* RNHelloWorldScene.swift */; };
 		46F23EA920670F77006D6FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23EA820670F77006D6FAC /* AppDelegate.swift */; };
 		46F23EB020670F77006D6FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAF20670F77006D6FAC /* Assets.xcassets */; };
 		46F23EB320670F77006D6FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */; };
@@ -31,8 +32,9 @@
 		468D25EE2070219A005EF265 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		468D25F42070265F005EF265 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		468D25F920702C3C005EF265 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
-		468D25FC20703A48005EF265 /* RnHighScoresScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RnHighScoresScene.swift; sourceTree = "<group>"; };
+		468D25FC20703A48005EF265 /* RNHighScoresScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNHighScoresScene.swift; sourceTree = "<group>"; };
 		468D26002070502A005EF265 /* SceneAwareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAwareViewController.swift; sourceTree = "<group>"; };
+		468D260220706262005EF265 /* RNHelloWorldScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHelloWorldScene.swift; sourceTree = "<group>"; };
 		46F23EA520670F77006D6FAC /* ReactNativePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F23EA820670F77006D6FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F23EAF20670F77006D6FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,7 +80,8 @@
 			children = (
 				468D25EE2070219A005EF265 /* Scene.swift */,
 				468D25EC20702176005EF265 /* ScenarioListScene.swift */,
-				468D25FC20703A48005EF265 /* RnHighScoresScene.swift */,
+				468D260220706262005EF265 /* RNHelloWorldScene.swift */,
+				468D25FC20703A48005EF265 /* RNHighScoresScene.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
@@ -276,7 +279,8 @@
 				468D25EF2070219A005EF265 /* Scene.swift in Sources */,
 				468D25ED20702176005EF265 /* ScenarioListScene.swift in Sources */,
 				468D26012070502A005EF265 /* SceneAwareViewController.swift in Sources */,
-				468D25FD20703A48005EF265 /* RnHighScoresScene.swift in Sources */,
+				468D260320706262005EF265 /* RNHelloWorldScene.swift in Sources */,
+				468D25FD20703A48005EF265 /* RNHighScoresScene.swift in Sources */,
 				468D25F52070265F005EF265 /* UIView+Extensions.swift in Sources */,
 				468D25E220700E92005EF265 /* RCTRootedViewController.swift in Sources */,
 			);
