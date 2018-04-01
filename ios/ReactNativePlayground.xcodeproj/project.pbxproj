@@ -78,10 +78,10 @@
 		468D25FB20703A02005EF265 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				468D25EE2070219A005EF265 /* Scene.swift */,
-				468D25EC20702176005EF265 /* ScenarioListScene.swift */,
 				468D260220706262005EF265 /* RNHelloWorldScene.swift */,
 				468D25FC20703A48005EF265 /* RNHighScoresScene.swift */,
+				468D25EC20702176005EF265 /* ScenarioListScene.swift */,
+				468D25EE2070219A005EF265 /* Scene.swift */,
 			);
 			name = Scenes;
 			sourceTree = "<group>";
