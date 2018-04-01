@@ -23,7 +23,7 @@ final class ScenarioListViewController: SceneAwareViewController {
         listView = UITableView(frame: .zero)
         super.init(nibName: scene.nibName, bundle: nil)
         self.scene = scene
-        title = "Scenario List"
+        title = "ReactNative Playground"
         
         let setUpListView = {
             self.view.addSubview(self.listView)
