@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4675A6BA20727D6400BDD45D /* RNTMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675A6B920727D6400BDD45D /* RNTMapManager.swift */; };
+		4675A6BC20727E3E00BDD45D /* RNNativeMapViewScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4675A6BB20727E3E00BDD45D /* RNNativeMapViewScene.swift */; };
 		468D25E220700E92005EF265 /* RCTRootedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25E120700E92005EF265 /* RCTRootedViewController.swift */; };
 		468D25E4207010D8005EF265 /* JavaScriptCodeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25E3207010D8005EF265 /* JavaScriptCodeLocation.swift */; };
 		468D25EB20701E1D005EF265 /* ScenarioListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25EA20701E1D005EF265 /* ScenarioListViewController.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		0E839CC1065336AF64E12FF9 /* Pods_ReactNativePlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactNativePlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4675A6B920727D6400BDD45D /* RNTMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNTMapManager.swift; sourceTree = "<group>"; };
+		4675A6BB20727E3E00BDD45D /* RNNativeMapViewScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNNativeMapViewScene.swift; sourceTree = "<group>"; };
 		468D25E120700E92005EF265 /* RCTRootedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCTRootedViewController.swift; sourceTree = "<group>"; };
 		468D25E3207010D8005EF265 /* JavaScriptCodeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JavaScriptCodeLocation.swift; sourceTree = "<group>"; };
 		468D25EA20701E1D005EF265 /* ScenarioListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioListViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				468D260420717F09005EF265 /* BasicBridgingExample.swift */,
+				4675A6B920727D6400BDD45D /* RNTMapManager.swift */,
 				468D260820717F41005EF265 /* ReactExternalModuleBridge.m */,
 			);
 			name = "ReactNative-Swift-Bridging";
@@ -97,6 +102,7 @@
 				468D260D20718746005EF265 /* RNBasicBridgingExampleScene.swift */,
 				468D260220706262005EF265 /* RNHelloWorldScene.swift */,
 				468D25FC20703A48005EF265 /* RNHighScoresScene.swift */,
+				4675A6BB20727E3E00BDD45D /* RNNativeMapViewScene.swift */,
 				468D25EC20702176005EF265 /* ScenarioListScene.swift */,
 				468D25EE2070219A005EF265 /* Scene.swift */,
 			);
@@ -295,7 +301,9 @@
 				46F23EA920670F77006D6FAC /* AppDelegate.swift in Sources */,
 				468D25EB20701E1D005EF265 /* ScenarioListViewController.swift in Sources */,
 				468D25FA20702C3C005EF265 /* UINavigationController+Extensions.swift in Sources */,
+				4675A6BC20727E3E00BDD45D /* RNNativeMapViewScene.swift in Sources */,
 				468D25E4207010D8005EF265 /* JavaScriptCodeLocation.swift in Sources */,
+				4675A6BA20727D6400BDD45D /* RNTMapManager.swift in Sources */,
 				468D260920717F41005EF265 /* ReactExternalModuleBridge.m in Sources */,
 				468D25EF2070219A005EF265 /* Scene.swift in Sources */,
 				468D25ED20702176005EF265 /* ScenarioListScene.swift in Sources */,

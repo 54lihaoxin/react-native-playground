@@ -7,6 +7,7 @@
 //
 
 #import <React/RCTBridgeModule.h>
+#import <React/RCTViewManager.h>
 
 @interface RCT_EXTERN_MODULE(BasicBridgingExample, NSObject)
 
@@ -15,5 +16,13 @@ RCT_EXTERN_METHOD(addEvent:(NSString *)name
                   numberOfSecondsSince1970:(nonnull NSNumber *)numberOfSecondsSince1970
                   details:(NSDictionary *)details
                   callback:(RCTResponseSenderBlock)callback);
+
+@end
+
+@interface RCT_EXTERN_MODULE(RNTMapManager, RCTViewManager)
+
+RCT_EXPORT_VIEW_PROPERTY(zoomEnabled, BOOL)
+
+RCT_EXTERN_METHOD(view);
 
 @end

@@ -16,13 +16,14 @@ final class ScenarioListScene: Scene {
         case RNHelloWorld
         case RNHighScores
         case RNBasicBridgingExample
+        case RNNativeMapView
     }
     
     override var viewController: UIViewController {
         return scenarioListViewController as UIViewController
     }
     
-    let items: [Item] = [.RNHelloWorld, .RNHighScores, .RNBasicBridgingExample]
+    let items: [Item] = [.RNHelloWorld, .RNHighScores, .RNBasicBridgingExample, .RNNativeMapView]
     lazy var scenarioListViewController: ScenarioListViewController = { ScenarioListViewController(with: self) }()
     
     func select(item: Item) {
@@ -30,6 +31,7 @@ final class ScenarioListScene: Scene {
         case .RNHelloWorld: navigationPush(scene: RNHelloWorldScene(parentScene: self))
         case .RNHighScores: navigationPush(scene: RNHighScoresScene(parentScene: self))
         case .RNBasicBridgingExample: navigationPush(scene: RNBasicBridgingExampleScene(parentScene: self))
+        case .RNNativeMapView: navigationPush(scene: RNNativeMapViewScene(parentScene: self))
         }
     }
 }

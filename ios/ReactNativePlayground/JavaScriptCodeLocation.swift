@@ -14,6 +14,7 @@ struct JavaScriptCodeLocation {
         case RNHelloWorld
         case RNHighScores
         case RNBasicBridgingExample
+        case RNNativeMapView
     }
     
     static var base: String {
