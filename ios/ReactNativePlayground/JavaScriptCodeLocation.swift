@@ -13,6 +13,7 @@ struct JavaScriptCodeLocation {
     enum Module: String {
         case RNHelloWorld
         case RNHighScores
+        case RNBasicBridgingExample
     }
     
     static var base: String {

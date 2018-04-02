@@ -17,6 +17,9 @@
 		468D25FD20703A48005EF265 /* RNHighScoresScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D25FC20703A48005EF265 /* RNHighScoresScene.swift */; };
 		468D26012070502A005EF265 /* SceneAwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D26002070502A005EF265 /* SceneAwareViewController.swift */; };
 		468D260320706262005EF265 /* RNHelloWorldScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D260220706262005EF265 /* RNHelloWorldScene.swift */; };
+		468D260520717F09005EF265 /* BasicBridgingExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D260420717F09005EF265 /* BasicBridgingExample.swift */; };
+		468D260920717F41005EF265 /* ReactExternalModuleBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 468D260820717F41005EF265 /* ReactExternalModuleBridge.m */; };
+		468D260E20718746005EF265 /* RNBasicBridgingExampleScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 468D260D20718746005EF265 /* RNBasicBridgingExampleScene.swift */; };
 		46F23EA920670F77006D6FAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F23EA820670F77006D6FAC /* AppDelegate.swift */; };
 		46F23EB020670F77006D6FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EAF20670F77006D6FAC /* Assets.xcassets */; };
 		46F23EB320670F77006D6FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */; };
@@ -35,6 +38,10 @@
 		468D25FC20703A48005EF265 /* RNHighScoresScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNHighScoresScene.swift; sourceTree = "<group>"; };
 		468D26002070502A005EF265 /* SceneAwareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneAwareViewController.swift; sourceTree = "<group>"; };
 		468D260220706262005EF265 /* RNHelloWorldScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNHelloWorldScene.swift; sourceTree = "<group>"; };
+		468D260420717F09005EF265 /* BasicBridgingExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBridgingExample.swift; sourceTree = "<group>"; };
+		468D260620717F41005EF265 /* ReactNativePlayground-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReactNativePlayground-Bridging-Header.h"; sourceTree = "<group>"; };
+		468D260820717F41005EF265 /* ReactExternalModuleBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactExternalModuleBridge.m; sourceTree = "<group>"; };
+		468D260D20718746005EF265 /* RNBasicBridgingExampleScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNBasicBridgingExampleScene.swift; sourceTree = "<group>"; };
 		46F23EA520670F77006D6FAC /* ReactNativePlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativePlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F23EA820670F77006D6FAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46F23EAF20670F77006D6FAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +63,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4675A6B62071D17100BDD45D /* ReactNative-Swift-Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				468D260420717F09005EF265 /* BasicBridgingExample.swift */,
+				468D260820717F41005EF265 /* ReactExternalModuleBridge.m */,
+			);
+			name = "ReactNative-Swift-Bridging";
+			sourceTree = "<group>";
+		};
 		468D25E920701D99005EF265 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +94,7 @@
 		468D25FB20703A02005EF265 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				468D260D20718746005EF265 /* RNBasicBridgingExampleScene.swift */,
 				468D260220706262005EF265 /* RNHelloWorldScene.swift */,
 				468D25FC20703A48005EF265 /* RNHighScoresScene.swift */,
 				468D25EC20702176005EF265 /* ScenarioListScene.swift */,
@@ -108,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				468D25F820702BFB005EF265 /* Extensions */,
+				4675A6B62071D17100BDD45D /* ReactNative-Swift-Bridging */,
 				468D25FB20703A02005EF265 /* Scenes */,
 				468D25E920701D99005EF265 /* ViewControllers */,
 				46F23EA820670F77006D6FAC /* AppDelegate.swift */,
@@ -115,6 +133,7 @@
 				46F23EB120670F77006D6FAC /* LaunchScreen.storyboard */,
 				46F23EAF20670F77006D6FAC /* Assets.xcassets */,
 				46F23EB420670F77006D6FAC /* Info.plist */,
+				468D260620717F41005EF265 /* ReactNativePlayground-Bridging-Header.h */,
 			);
 			path = ReactNativePlayground;
 			sourceTree = "<group>";
@@ -171,6 +190,7 @@
 				TargetAttributes = {
 					46F23EA420670F77006D6FAC = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -276,11 +296,14 @@
 				468D25EB20701E1D005EF265 /* ScenarioListViewController.swift in Sources */,
 				468D25FA20702C3C005EF265 /* UINavigationController+Extensions.swift in Sources */,
 				468D25E4207010D8005EF265 /* JavaScriptCodeLocation.swift in Sources */,
+				468D260920717F41005EF265 /* ReactExternalModuleBridge.m in Sources */,
 				468D25EF2070219A005EF265 /* Scene.swift in Sources */,
 				468D25ED20702176005EF265 /* ScenarioListScene.swift in Sources */,
 				468D26012070502A005EF265 /* SceneAwareViewController.swift in Sources */,
 				468D260320706262005EF265 /* RNHelloWorldScene.swift in Sources */,
 				468D25FD20703A48005EF265 /* RNHighScoresScene.swift in Sources */,
+				468D260E20718746005EF265 /* RNBasicBridgingExampleScene.swift in Sources */,
+				468D260520717F09005EF265 /* BasicBridgingExample.swift in Sources */,
 				468D25F52070265F005EF265 /* UIView+Extensions.swift in Sources */,
 				468D25E220700E92005EF265 /* RCTRootedViewController.swift in Sources */,
 			);
@@ -414,6 +437,7 @@
 			baseConfigurationReference = E6A24A26A072558E6401CC56 /* Pods-ReactNativePlayground.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RFZ63C7NL;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -428,6 +452,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haoxin.ReactNativePlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativePlayground/ReactNativePlayground-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -438,6 +464,7 @@
 			baseConfigurationReference = 566B2DC747474C5F09232AA0 /* Pods-ReactNativePlayground.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5RFZ63C7NL;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -452,6 +479,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.haoxin.ReactNativePlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ReactNativePlayground/ReactNativePlayground-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
